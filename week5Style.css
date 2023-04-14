@@ -1,0 +1,100 @@
+@media screen and (min-width: 500px){{
+    }
+}
+
+h1{
+    padding-left: 31%;
+}
+
+.Time{
+    padding-left: 35%;
+}
+
+.InCates{
+    padding-left: 90px;
+}
+
+.InDes{
+    padding-left:17px;
+}
+
+.InAmount{
+    padding-left: 70px;
+}
+
+.ExCates{
+    padding-left: 90px;
+}
+
+.ExDes{
+    padding-left:17px;
+}
+
+.ExAmount{
+    padding-left: 70px;
+}
+
+.Income{
+    background-color: aqua;
+    display:block;
+    margin-top: 0%;
+    padding-left: 10%;
+    padding-right: 8%;
+    margin-left: 300px;
+    padding-top: 10px;
+    width: 550px;
+    height: 200px;
+}
+
+.Expenses{
+    background-color: crimson;
+    display:block;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 8%;
+    margin-left: 300px;
+    width: 550px;
+    height: 200px;
+}
+.Total{
+    background-color:lawngreen;
+    display:block;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 8%;
+    margin-left: 300px;
+    padding-bottom: 30px;
+    width: 550px;
+    height: 100px;
+}
+
+.Total label{
+    margin-right: 30px;
+}
+
+.IncomeTitle{
+    font-weight: 900;
+    font-size: large;
+    padding-left: 35%;
+}
+
+.ExpenseTitle{
+    font-weight: 900;
+    font-size: large;
+    padding-left: 35%;
+}
+
+.Total label{
+    padding-left: 15%;
+    width: 150px;
+    display: inline-block;
+}
+
+.SubmitButton {
+    margin-top: 3%;
+    margin-left: 37%;
+    height: 35px;
+    width: 70px;
+    border-radius: 10px;
+  }

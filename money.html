@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="week5Style.css">
+    <script src="week6script.js" defer></script>
+    <style>
+        /* body{
+            background-image: url("https://www.teahub.io/photos/full/191-1910373_wallpapers-free-backgrounds-free-animated-gifs-free-dollar.jpg");
+			background-repeat: no-repeat;
+			background-size:auto;
+        } */
+    </style>
+</head>
+<h1>MONA'S MONEY MANAGEMENT</h1>
+<div class = "Time">
+<label for="month" class="month">Month:</label>
+<input id="month" type="month">
+<label for="Year" class="Year">Year:</label>
+<input id="Year" type ="number" onblur= "ValidateYear(this,document.getElementById('error1'));">
+&nbsp;<span style="color:red;" id="error1"></span>
+</div>
+<body>
+<form id = "MoneyForm" class="MoneyForm" method="post" action="https://twaaut.cdms.westernsydney.edu.au/twainfo/form.asp">
+<section class="Income">
+        <h2 class="IncomeTitle">My Income</h2>
+        <label for ="InDates" class ="InDates">Date:</label>
+        <label for ="InCates" class ="InCates">Category:</label>
+        <label for ="InDes" class ="InDes">Description:</label>
+        <label for ="InAmount" class ="InAmount">Amount (Aud):</label>
+        
+        <br>
+        <input type="date" id="InDates" name="InDates" required>    
+        <select id="InCates" name="InCates" size="1">
+            <option value="Salary">Salary</option>
+            <option value="Tips">Tips</option>
+            <option value="Interest">Interest</option>
+            <option value="Dividends">Dividends</option>
+            <option value="InOther">Other</option>
+        </select>
+        <input type="text" id="InDes" name="InDes" required>
+        <input type="number" id="InAmount" name="InAmount" required>
+
+        <br><input type="date" id="Dates1" name="Dates1">
+        <select id="InCates1" name="InCates1" size="1">
+            <option value="Salary">Salary</option>
+            <option value="Tips">Tips</option>
+            <option value="Interest">Interest</option>
+            <option value="Dividends">Dividends</option>
+            <option value="InOther">Other</option>
+        </select>
+        <input type="text" id="InDescrption1" name="InDescrption1">
+        <input type="number" id="InAmount1" name="InAmount1">
+
+        <br><input type="date" id="Dates2" name="Dates2">
+        <select id="InCates2" name="InCates2" size="1">
+            <option value="Salary">Salary</option>
+            <option value="Tips">Tips</option>
+            <option value="Interest">Interest</option>
+            <option value="Dividends">Dividends</option>
+            <option value="InOther">Other</option>
+        </select>
+        <input type="text" id="InDescrption2" name="InDescrption2">
+        <input type="number" id="InAmount2" name="InAmount2">
+
+        <br><input type="date" id="Dates3" name="Dates3">
+        <select id="InCates3" name="InCates3" size="1">
+            <option value="Salary">Salary</option>
+            <option value="Tips">Tips</option>
+            <option value="Interest">Interest</option>
+            <option value="Dividends">Dividends</option>
+            <option value="InOther">Other</option>
+        </select>
+        <input type="text" id="InDescrption3" name="InDescrption3">
+        <input type="number" id="InAmount3" name="InAmount3">
+
+        <br><input type="date" id="Dates4" name="Dates4">
+        <select id="InCates4" name="InCates4" size="1">
+            <option value="Salary">Salary</option>
+            <option value="Tips">Tips</option>
+            <option value="Interest">Interest</option>
+            <option value="Dividends">Dividends</option>
+            <option value="InOther">Other</option>
+        </select>
+        <input type="text" id="InDescrption4" name="InDescrption4">
+        <input type="number" id="InAmount4" name="InAmount4">
+    </section>
+        <section class="Expenses">
+        <h2 class="ExpenseTitle">My Expenses</h2>
+        <label for="ExDates" class="ExDates">Date:</label>
+        <label for="ExCates" class="ExCates">Category:</label>
+        <label for="ExDes" class="ExDes">Description:</label>
+        <label for="ExAmount" class="ExAmount">Amount:</label>
+
+        <br><input type="date" id="ExDates" name="Dates">
+        <select id="ExCates" name="ExCates" size="1">
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="LifeStyle">Life style</option>
+            <option value="ExOther">Other</option>
+        </select>
+        <input type="text" id="ExDes" name="ExDes">
+        <input type="number" id="ExAmount" name="Amount">
+
+        <br><input type="date" id="ExDates1" name="ExDates1">
+        <select id="ExCates1" name="ExCates1" size="1">
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="LifeStyle">Life style</option>
+            <option value="ExOther">Other</option>
+        </select>
+        <input type="text" id="ExDes1" name="ExDes1">
+        <input type="number" id="ExAmount1" name="Amount1">
+
+        <br><input type="date" id="ExDates2" name="ExDates2">
+        <select id="ExCates2" name="ExCates2" size="1">
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="LifeStyle">Life style</option>
+            <option value="ExOther">Other</option>
+        </select>
+        <input type="text" id="ExDes2" name="ExDes2">
+        <input type="number" id="ExAmount2" name="Amount2">
+
+        <br><input type="date" id="ExDates3" name="ExDates3">
+        <select id="ExCates3" name="ExCates3" size="1">
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="LifeStyle">Life style</option>
+            <option value="ExOther">Other</option>
+        </select>
+        <input type="text" id="ExDes3" name="ExDes3">
+        <input type="number" id="ExAmount3" name="Amount3">
+
+        <br><input type="date" id="ExDates4" name="ExDates4">
+        <select id="ExCates4" name="ExCates4" size="1">
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="LifeStyle">Life style</option>
+            <option value="ExOther">Other</option>
+        </select>
+        <input type="text" id="ExDes4" name="ExDes4">
+        <input type="number" id="ExAmount4" name="Amount4">
+    </section>
+        <div class ="Total">
+        <label for="TotalEx">Total Expenses:</label>
+        <input type="number" id="TotalEx" name="TotalEx">
+        <br>
+        <label for="TotalIn">Total Income:</label>
+        <input type="number" id="TotalIn" name="TotalIn">
+        <br>
+        <label for="TotalSav">Total Saving:</label>
+        <input type="number" id="TotalSav" name="TotalSav">
+        <br>
+        <input class="SubmitButton" type="submit" name="Submit">
+    </div>
+</form>
+
+</body>
+</html>
